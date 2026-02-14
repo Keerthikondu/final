@@ -1,139 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* BODY */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form Box */
+form {
+  background: white;
   padding: 30px;
+  border-radius: 12px;
+  width: 700px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-/* MAIN TITLE */
-h1 {
-  text-align: center;
-  font-size: 45px;
-  font-weight: 800;
-  margin-bottom: 30px;
-  background: linear-gradient(90deg, #ff512f, #dd2476, #ffcc70);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 4s linear infinite;
-  text-shadow: 0 0 15px rgba(255, 81, 47, 0.7);
-}
-
-/* Animated gradient */
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
-}
-
-/* SECTION TITLE */
+/* Heading */
 h2 {
-  font-size: 28px;
-  margin-top: 50px;
+  text-align: center;
   margin-bottom: 20px;
-  color: #ffcc70;
-  text-shadow: 0 0 10px rgba(255, 204, 112, 0.8);
-  border-left: 6px solid #ff512f;
-  padding-left: 15px;
+  color: #4e73df;
 }
 
-/* MOVIE TITLE */
-h3 {
-  font-size: 22px;
-  margin-top: 20px;
-  color: #ffffff;
-  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+/* Fieldset */
+fieldset {
+  border: 2px solid #4e73df;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-/* CARD STYLE */
-.card {
-  background: rgba(255,255,255,0.08);
-  padding: 25px;
-  border-radius: 20px;
-  margin-bottom: 40px;
-  backdrop-filter: blur(10px);
-  box-shadow: 
-      0 8px 25px rgba(0,0,0,0.6),
-      0 0 20px rgba(255, 81, 47, 0.2);
-  transition: all 0.4s ease;
+legend {
+  font-weight: bold;
+  color: #1cc88a;
+  padding: 0 10px;
 }
 
-/* Card Hover */
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 
-      0 15px 35px rgba(0,0,0,0.8),
-      0 0 30px rgba(255, 81, 47, 0.6);
-}
-
-/* IMAGE */
-img {
-  border-radius: 15px;
+/* Table */
+table {
   width: 100%;
-  max-width: 400px;
-  box-shadow: 
-      0 10px 25px rgba(0,0,0,0.7),
-      0 0 20px rgba(221, 36, 118, 0.5);
-  transition: all 0.4s ease;
 }
 
-img:hover {
-  transform: scale(1.05);
-  box-shadow: 
-      0 15px 40px rgba(0,0,0,0.9),
-      0 0 35px rgba(221, 36, 118, 0.8);
+td {
+  padding: 10px;
 }
 
-/* VIDEO */
-video {
+/* Inputs */
+input,
+select,
+textarea {
   width: 100%;
-  max-width: 500px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
 }
 
-/* AUDIO */
-audio {
-  width: 100%;
+/* Radio buttons */
+input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
   margin-top: 10px;
 }
 
-/* PARAGRAPH TEXT */
-p {
-  margin-top: 15px;
-  padding: 20px;
-  border-radius: 15px;
-  background: rgba(255,255,255,0.05);
-  line-height: 1.8;
-  font-size: 16px;
-  text-shadow: 0 0 5px rgba(255,255,255,0.4);
-  box-shadow: 
-      inset 0 0 15px rgba(255,255,255,0.05),
-      0 5px 15px rgba(0,0,0,0.5);
-}
-
-/* HR */
-hr {
+.buttons input {
+  width: 120px;
+  padding: 8px;
+  margin: 0 10px;
   border: none;
-  height: 3px;
-  margin: 50px 0;
-  background: linear-gradient(to right, #ff512f, #dd2476);
-  box-shadow: 0 0 15px rgba(255, 81, 47, 0.7);
+  border-radius: 6px;
+  background-color: #4e73df;
+  color: white;
+  cursor: pointer;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  img, video {
-    width: 100%;
-    height: auto;
-  }
+.buttons input:hover {
+  background-color: #2e59d9;
+}
+
+/* Feedback */
+.feedback {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.feedback textarea {
+  height: 100px;
+  resize: none;
+  margin-top: 8px;
+  border: 1px solid #4e73df;
 }
