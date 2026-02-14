@@ -1,0 +1,171 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== LINKS ===== */
+a {
+    text-decoration: none;
+    color: #4a00e0;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #ff6a00;
+}
+
+/* ===== HEADER ===== */
+table:first-of-type {
+    background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    color: white;
+}
+
+table:first-of-type td {
+    border: none;
+    padding: 18px;
+}
+
+table:first-of-type a {
+    color: white;
+}
+
+table:first-of-type a:hover {
+    color: #ffd369;
+}
+
+/* ===== GLOBAL TABLE STYLE ===== */
+table {
+    border-collapse: collapse;
+    background: white;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+td {
+    border: 1px solid #eee;
+    padding: 15px;
+}
+
+/* ===== HERO ===== */
+h1 {
+    font-size: 42px;
+    margin: 20px 0;
+    color: #4a00e0;
+}
+
+center p {
+    margin-bottom: 12px;
+}
+
+/* ===== STATS ===== */
+table:nth-of-type(2) td {
+    background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+table:nth-of-type(2) td:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== SECTION HEADINGS ===== */
+h2 {
+    color: #4a00e0;
+    margin: 25px 0 10px;
+}
+
+/* ===== PROJECT CARDS ===== */
+table[width="90%"] td {
+    transition: 0.3s ease;
+}
+
+table[width="90%"] td:hover {
+    background: #f5f0ff;
+    transform: scale(1.03);
+}
+
+/* ===== ABOUT ICON CELL ===== */
+table[width="80%"] td:first-child {
+    font-size: 28px;
+    color: #8e2de2;
+    font-weight: bold;
+}
+
+/* ===== IMPORTANCE GRID ===== */
+table[width="90%"] td {
+    text-align: center;
+}
+
+/* ===== FORM ===== */
+input, textarea {
+    width: 95%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #8e2de2;
+    outline: none;
+}
+
+input[type="submit"] {
+    background: linear-gradient(45deg, #4a00e0, #8e2de2);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+table:last-of-type {
+    background: #1a1a2e;
+    color: white;
+}
+
+table:last-of-type td {
+    border: none;
+}
+
+table:last-of-type a {
+    color: #ffd369;
+}
+
+hr {
+    margin: 40px auto;
+    width: 80%;
+    border: 1px solid #ccc;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    table {
+        width: 95% !important;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
