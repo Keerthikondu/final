@@ -8,32 +8,33 @@
 /* ===== BODY ===== */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f0f4f8;
-    color: #333;
+    background: #eef2f7;
+    color: #222;
     line-height: 1.6;
 }
 
 /* ===== LINKS ===== */
 a {
     text-decoration: none;
-    color: #4a00e0;
     font-weight: bold;
-    transition: 0.3s ease;
+    color: #0a58ca;
+    transition: 0.3s;
 }
 
 a:hover {
-    color: #ff6a00;
+    color: #0dcaf0;
 }
 
 /* ===== HEADER ===== */
 table:first-of-type {
-    background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    background: linear-gradient(90deg, #0a1931, #185adb);
     color: white;
 }
 
 table:first-of-type td {
     border: none;
-    padding: 18px;
+    padding: 25px;
+    font-size: 18px;
 }
 
 table:first-of-type a {
@@ -41,131 +42,161 @@ table:first-of-type a {
 }
 
 table:first-of-type a:hover {
-    color: #ffd369;
-}
-
-/* ===== GLOBAL TABLE STYLE ===== */
-table {
-    border-collapse: collapse;
-    background: white;
-    margin: auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-}
-
-td {
-    border: 1px solid #eee;
-    padding: 15px;
+    color: #0dcaf0;
 }
 
 /* ===== HERO ===== */
 h1 {
-    font-size: 42px;
-    margin: 20px 0;
-    color: #4a00e0;
+    font-size: 48px;
+    margin: 30px 0;
+    color: #0a1931;
 }
 
 center p {
-    margin-bottom: 12px;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
-/* ===== STATS ===== */
+/* ===== GLOBAL TABLE STYLE ===== */
+table {
+    border-collapse: separate;
+    margin: 40px auto;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+/* ===== STATS SECTION ===== */
+table:nth-of-type(2) {
+    width: 80%;
+}
+
 table:nth-of-type(2) td {
-    background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
-    font-weight: bold;
+    background: linear-gradient(135deg, #185adb, #0dcaf0);
+    color: white;
+    padding: 45px;
+    font-size: 20px;
+    text-align: center;
     transition: 0.3s;
 }
 
 table:nth-of-type(2) td:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
 /* ===== SECTION HEADINGS ===== */
 h2 {
-    color: #4a00e0;
-    margin: 25px 0 10px;
+    margin: 40px 0 15px;
+    font-size: 32px;
+    color: #0a1931;
+    text-align: center;
 }
 
-/* ===== PROJECT CARDS ===== */
-table[width="90%"] td {
+/* ===== CONTENT SECTIONS ===== */
+table[width="80%"],
+table[width="90%"],
+table[width="70%"] {
+    background: white;
+    width: 85% !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+table[width="80%"] td,
+table[width="90%"] td,
+table[width="70%"] td {
+    padding: 35px;
+    border: none;
+    font-size: 18px;
+}
+
+/* ===== PROJECT SECTION BIG CARDS ===== */
+a[name="projects"] + center + table {
+    width: 95% !important;
+    border-spacing: 30px;
+    background: transparent;
+    box-shadow: none;
+}
+
+a[name="projects"] + center + table td {
+    background: white;
+    padding: 60px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 22px;
     transition: 0.3s ease;
 }
 
-table[width="90%"] td:hover {
-    background: #f5f0ff;
-    transform: scale(1.03);
+a[name="projects"] + center + table td:hover {
+    transform: translateY(-8px);
 }
 
-/* ===== ABOUT ICON CELL ===== */
-table[width="80%"] td:first-child {
-    font-size: 28px;
-    color: #8e2de2;
-    font-weight: bold;
-}
-
-/* ===== IMPORTANCE GRID ===== */
-table[width="90%"] td {
-    text-align: center;
+a[name="projects"] + center + table b {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 20px;
+    color: #185adb;
 }
 
 /* ===== FORM ===== */
 input, textarea {
-    width: 95%;
-    padding: 10px;
-    border-radius: 6px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
     border: 1px solid #ccc;
-    transition: 0.3s;
-}
-
-input:focus, textarea:focus {
-    border-color: #8e2de2;
-    outline: none;
+    margin-bottom: 15px;
 }
 
 input[type="submit"] {
-    background: linear-gradient(45deg, #4a00e0, #8e2de2);
+    background: #185adb;
     color: white;
-    border: none;
     font-weight: bold;
+    border: none;
     cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 input[type="submit"]:hover {
-    transform: scale(1.05);
+    background: #0dcaf0;
 }
 
 /* ===== FOOTER ===== */
 table:last-of-type {
-    background: #1a1a2e;
+    background: #0a1931;
     color: white;
+    width: 100% !important;
 }
 
 table:last-of-type td {
     border: none;
+    padding: 25px;
 }
 
 table:last-of-type a {
-    color: #ffd369;
+    color: #0dcaf0;
 }
 
 hr {
-    margin: 40px auto;
+    border: none;
+    height: 3px;
+    background: #185adb;
     width: 80%;
-    border: 1px solid #ccc;
+    margin: 40px auto;
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
     table {
         width: 95% !important;
     }
 
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 22px;
+    a[name="projects"] + center + table td {
+        padding: 40px 20px;
+        font-size: 18px;
     }
 }
